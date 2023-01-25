@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+body * {
+    box-sizing: border-box; 
+}
+
+.header__container {
+    max-width: 1440px;
+    height: 80px;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+#header__logo {
+    width: 136px;
+    height: 31px;
+    margin: 25px 60px 0 100px;
+}
+
+.header__form {
+    position: relative;
+    width: 835px;
+}
+
+.header__input {
+    width: 835px;
+    height: 40px;
+    outline: none;
+    padding: 0 39px;
+    margin: 20px 0;
+}
+
+.header__btn {
+    position: absolute; 
+    top: 0;
+    right: 795px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.header__btn:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #768298;
+}
+
+.header__line {
+    width: 1px;
+    height: 80px;
+    position: absolute;
+    margin: 0 0 0 1191px;
+}
+
+.header__username {
+    margin: 31px 0 0 80px;
+    line-height: 120%;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: #768298;
+}
+
+#header__avatar {
+    margin: 20px 0 0 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.section1__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 160%;
+    text-transform: uppercase;
+    color: #121920;
+    margin: 70px 0 30px 100px;
+}
+
+.section1__container {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0 0 100px;
+    flex-wrap: wrap;
+}
+
+.section1__logo {
+    width: 287.5px;
+    height: 120px;
+    border: 1px solid #EBEBF1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1__logo:hover {
+    background: #FFFFFF;
+    box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+    /* For Tablet */
+    .header__container {
+        width: 768px;
+    }
+
+    #header__logo {
+    margin: 25px 49px 0 20px;
+    }
+
+    .header__form {
+    position: relative;
+    width: 344px;
+    }
+
+    .header__input {
+        width: 344px;
+    }
+
+    .header__btn {
+        right: 304px;
+    }
+
+    .header__line {
+        margin: 0 0 0 599px;
+    }
+
+    .header__username {
+        margin-left: 70px;
+    }
+
+    .section1__title {
+        font-size: 28px;
+        margin-left: 20px;
+    }
+
+    .section1__container {
+        margin-left: 20px;
+        gap: 20px;
+    }
+
+    .section1__logo {
+        width: 229px;
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+    /*For smartphone*/
+    .header__container {
+        width: 375px;
+        height: 105px;
+    }
+
+    .header__form {
+        width: 375px;
+        height: 41px;
+        position: absolute;
+        margin: 64px 0 0 0;
+    }
+
+    .header__input {
+        width: 375px;
+        height: 41px;
+        border: none;
+        margin: 0;
+        position: absolute;
+        padding-left: 49px;
+    }
+
+    .header__btn{
+        margin: 0;
+        padding-left: 24px;
+        right: 335px;
+    }
+
+    #header__logo {
+        margin: 17px 0 16px 20px;
+    }
+
+    #header__avatar {
+        visibility: hidden;
+        margin: 20px 0 0 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .header__username {
+        display: none;
+    }
+
+    #header__avatar {
+        visibility: visible;
+        content: url(..//images/Profile-stroke.svg);
+        width: 24px;
+        height: 24px;
+        margin-left: 174px;
+    }
+
+    .header__line {
+        width: 375px;
+        height: 1px;
+        margin: 63px 0 0 0;
+    }
+
+    .section1__container {
+        margin-bottom: 73px;
+    }
+
+    .section1__logo {
+        width: 335px;
+        height: 140px;
+    }
+
+    .section1__logo-image1 {
+        width: 145px;
+        height: 82px;
+    }
+
+    .section1__logo-image2 {
+        width: 234px;
+        height: 44px;
+    }
+
+    .section1__logo-image3 {
+        width: 100px;
+        height: 75px;
+    }
+
+    .section1__logo-image4 {
+        width: 194px;
+        height: 78px;
+    }
+
+    .section1__logo-image5 {
+        width: 232px;
+        height: 48px;
+    }
+
+    .section1__logo-image6 {
+        width: 141px;
+        height: 74px;
+    }
+
+    .section1__logo-image7 {
+        width: 247px;
+        height: 38px;
+    }
+}
