@@ -12,13 +12,17 @@
     <header class="header">
         <div class="header__container">
             <img id="header__logo" src="..//images/logo.svg" alt="logo">
-            <form class="header__form"> 
-                <input class="header__input" type="search" placeholder="Искать здесь...">
-                <button class="header__btn" type="submit"></button>
+            <form class="header__form">
+                <div class="header__form-container"> 
+                    <button class="header__form-btn" type="submit"></button>
+                    <input class="header__form-input" type="search" placeholder="Найти...">
+                </div>
             </form>
-            <hr class="header__line">
-            <p class="header__username">Константин</p>
-            <img id="header__avatar" src="..//images/user.svg" alt="user photo">
+            <hr class="header__user-line">
+            <div class="header__user">
+                <p class="header__user-name">Константин</p>
+                <img id="header__user-avatar" src="..//images/user.svg" alt="user photo">
+            </div>
         </div>
     </header>
 
