@@ -13,8 +13,15 @@ body * {
     box-sizing: border-box; 
 }
 
-.header__container {
+.header {
     max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header__container {
+    justify-content: space-between;
+    max-width: 1440px;
+    min-width: 960px;
     height: 80px;
     display: flex;
     background: #FFFFFF;
@@ -29,21 +36,22 @@ body * {
 
 .header__form {
     position: relative;
-    width: 835px;
+    max-width: 835px;
+    min-width: 344px;
+    width: 100%;
 }
 
-.header__input {
-    width: 835px;
+.header__form-input {
+    max-width: 835px;
+    width: 100%;
     height: 40px;
     outline: none;
     padding: 0 39px;
-    margin: 20px 0;
+    margin: 20px 0; 
 }
 
-.header__btn {
+.header__form-btn {
     position: absolute; 
-    top: 0;
-    right: 795px;
     width: 42px;
     height: 42px;
     border: none;
@@ -52,30 +60,34 @@ body * {
     margin-top: 20px;
 }
 
-.header__btn:before {
+.header__form-btn:before {
     content: "\f002";
     font-family: FontAwesome;
     font-size: 16px;
     color: #768298;
 }
 
-.header__line {
+.header__user-line {
     width: 1px;
     height: 80px;
-    position: absolute;
-    margin: 0 0 0 1191px;
+    margin: 0 0 0 60px;
 }
 
-.header__username {
-    margin: 31px 0 0 80px;
+.header__user {
+    display: flex;
+    align-items: center;
+}
+
+.header__user-name {
+    margin: 0 10px 0 19px;
     line-height: 120%;
     text-align: right;
     letter-spacing: 0.01em;
     color: #768298;
 }
 
-#header__avatar {
-    margin: 20px 0 0 10px;
+#header__user-avatar {
+    margin: 0 100px 0 0;
     width: 40px;
     height: 40px;
 }
@@ -114,7 +126,7 @@ body * {
 @media screen and (max-width: 769px) {
     /* For Tablet */
     .header__container {
-        width: 768px;
+        min-width: 768px;
     }
 
     #header__logo {
@@ -136,6 +148,10 @@ body * {
 
     .header__line {
         margin: 0 0 0 599px;
+    }
+
+    #header__user-avatar {
+        margin-right: 20px;
     }
 
     .header__username {
@@ -161,18 +177,20 @@ body * {
 @media screen and (max-width: 376px) {
     /*For smartphone*/
     .header__container {
-        width: 375px;
+        min-width: 375px;
         height: 105px;
+        display: block;
     }
 
-    .header__form {
+    .header__form-container {
         width: 375px;
+        min-width: 375px;
         height: 41px;
         position: absolute;
-        margin: 64px 0 0 0;
+        margin: 0;
     }
 
-    .header__input {
+    .header__form-input {
         width: 375px;
         height: 41px;
         border: none;
@@ -181,7 +199,7 @@ body * {
         padding-left: 49px;
     }
 
-    .header__btn{
+    .header__form-btn {
         margin: 0;
         padding-left: 24px;
         right: 335px;
@@ -191,29 +209,40 @@ body * {
         margin: 17px 0 16px 20px;
     }
 
-    #header__avatar {
+    #header__user-avatar {
         visibility: hidden;
-        margin: 20px 0 0 10px;
         width: 40px;
         height: 40px;
     }
 
-    .header__username {
+    .header__user-name {
         display: none;
     }
 
-    #header__avatar {
+    .header__user {
+        position: relative;
+        display: block;
+        width: 24px;
+    }
+
+    #header__user-avatar {
         visibility: visible;
         content: url(..//images/Profile-stroke.svg);
         width: 24px;
         height: 24px;
-        margin-left: 174px;
+        margin: -48px 0 0 330px;
+        position: absolute;
     }
 
-    .header__line {
+    .header__user-line {
         width: 375px;
         height: 1px;
-        margin: 63px 0 0 0;
+        margin: 0;
+        position: relative;
+    }
+
+    .header__form-btn {
+        z-index: 1;
     }
 
     .section1__container {
